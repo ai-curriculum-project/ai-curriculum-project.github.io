@@ -434,7 +434,7 @@ section {
   border-color: var(--c-accent);
 }
 
-.session.demo-day::before { content: '16 · graduation'; }
+.session.demo-day::before { content: '13 · graduation'; }
 
 /* ---------- PRICING ---------- */
 
