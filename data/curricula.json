@@ -1,0 +1,499 @@
+{
+ "orgs": [
+  {
+   "key": "ai-startup",
+   "name": "AI Startup",
+   "verb": "Turn it into a company",
+   "position": "outer",
+   "org_url": "https://github.com/ai-startup-curriculum",
+   "tagline": "An open-source startup operating school for technical founders — functional curricula × role pathways × startup stages.",
+   "overview": "This org covers **turning it into a company** — the operating knowledge technical founders need: how startups work as a system, customer discovery and product-market fit, go-to-market, finance and fundraising, operations and governance, and the endgame. Each curriculum is one self-contained repository, and you learn by building real **founder artifacts**, not reading case studies.",
+   "start": "startup-foundations",
+   "single_repo": true,
+   "roles": [
+    {
+     "id": "startup-foundations",
+     "title": "Startup Foundations",
+     "level": 10,
+     "focus": "How startups work as a system, the dependency graph, stages, founder operating basics, reading the numbers",
+     "band": "",
+     "learning": "https://github.com/ai-startup-curriculum/startup-foundations",
+     "solutions": null,
+     "modules": 5
+    },
+    {
+     "id": "founder-ceo",
+     "title": "Founder / CEO",
+     "level": 20,
+     "focus": "Customer discovery, business modeling, runway, pre-seed to seed fundraising, SAFEs & cap tables, founder-led sales",
+     "band": "",
+     "learning": "https://github.com/ai-startup-curriculum/founder-ceo-curriculum",
+     "solutions": null,
+     "modules": 6
+    },
+    {
+     "id": "cto",
+     "title": "Co-Founder / CTO",
+     "level": 25,
+     "focus": "Architecture under uncertainty, build vs. buy, first engineering hires, tech debt as a business decision, scaling",
+     "band": "",
+     "learning": "https://github.com/ai-startup-curriculum/cto-curriculum",
+     "solutions": null,
+     "modules": 8
+    },
+    {
+     "id": "startup-product-gtm",
+     "title": "Startup Product & GTM",
+     "level": 30,
+     "focus": "Problem validation, PMF signals, positioning, ICP, founder-led sales, pricing & packaging, demand generation",
+     "band": "",
+     "learning": "https://github.com/ai-startup-curriculum/startup-product-gtm-curriculum",
+     "solutions": null,
+     "modules": 10
+    },
+    {
+     "id": "cpo",
+     "title": "Founding CPO / Head of Product",
+     "level": 35,
+     "focus": "Discovery to PMF, prioritization, outcome roadmaps, discovery/delivery cadence, experimentation & AI evals",
+     "band": "",
+     "learning": "https://github.com/ai-startup-curriculum/cpo-curriculum",
+     "solutions": null,
+     "modules": 7
+    },
+    {
+     "id": "startup-finance-fundraising",
+     "title": "Startup Finance & Fundraising",
+     "level": 40,
+     "focus": "Startup accounting, unit economics, three-statement forecasting, cap tables, convertibles, valuation, fundraising",
+     "band": "",
+     "learning": "https://github.com/ai-startup-curriculum/startup-finance-fundraising-curriculum",
+     "solutions": null,
+     "modules": 11
+    },
+    {
+     "id": "startup-operations-governance",
+     "title": "Startup Operations & Governance",
+     "level": 50,
+     "focus": "Entity formation, founder legal architecture, employment law, HR ops, equity-comp policy, compensation",
+     "band": "",
+     "learning": "https://github.com/ai-startup-curriculum/startup-operations-governance-curriculum",
+     "solutions": null,
+     "modules": 13
+    },
+    {
+     "id": "startup-exit",
+     "title": "Startup Exit & Endgame",
+     "level": 60,
+     "focus": "Endgame strategy, M&A structures & acquirer motivations, LOIs, diligence & data rooms, secondaries",
+     "band": "",
+     "learning": "https://github.com/ai-startup-curriculum/startup-exit-curriculum",
+     "solutions": null,
+     "modules": 14
+    }
+   ]
+  },
+  {
+   "key": "ai-governance",
+   "name": "AI Governance",
+   "verb": "Govern, secure, and assure AI",
+   "position": "outer",
+   "org_url": "https://github.com/ai-governance-curriculum",
+   "tagline": "A hands-on, role-based curriculum for governing, securing, and assuring AI — from analyst to Chief AI Officer.",
+   "overview": "This org covers **AI governance** — *governing, securing and assuring* AI: inventories and risk assessments, red-teaming and adversarial ML, release assurance and evaluation evidence, ML security, agentic safety, enterprise control architecture, and executive leadership of an AI governance program. Every role track has a paired **learning** repository and a **solutions** repository with reference walkthroughs.",
+   "start": "ai-governance-analyst",
+   "single_repo": false,
+   "roles": [
+    {
+     "id": "ai-governance-analyst",
+     "title": "AI Governance Analyst",
+     "level": 15,
+     "focus": "AI inventory & intake, risk assessments, fairness review, impact assessments & model cards, regulatory tracking",
+     "band": "Analyst & Risk (L15–L25)",
+     "learning": "https://github.com/ai-governance-curriculum/ai-governance-analyst-learning",
+     "solutions": "https://github.com/ai-governance-curriculum/ai-governance-analyst-solutions",
+     "modules": 10
+    },
+    {
+     "id": "ai-risk-engineer",
+     "title": "AI Risk Engineer",
+     "level": 25,
+     "focus": "Risk frameworks, harm modeling, risk registers, LLM red-teaming, adversarial ML, fairness, privacy risk",
+     "band": "Analyst & Risk (L15–L25)",
+     "learning": "https://github.com/ai-governance-curriculum/ai-risk-engineer-learning",
+     "solutions": "https://github.com/ai-governance-curriculum/ai-risk-engineer-solutions",
+     "modules": 12
+    },
+    {
+     "id": "ai-evaluation-engineer",
+     "title": "AI Evaluation Engineer",
+     "level": 35,
+     "focus": "Release assurance, assurance cases, release gates, evaluation evidence pipelines, cross-jurisdiction obligations",
+     "band": "Assurance, Security & Safety (L35–L40)",
+     "learning": "https://github.com/ai-governance-curriculum/ai-evaluation-engineer-learning",
+     "solutions": "https://github.com/ai-governance-curriculum/ai-evaluation-engineer-solutions",
+     "modules": 12
+    },
+    {
+     "id": "security",
+     "title": "AI/ML Security & Governance Engineer",
+     "level": 35,
+     "focus": "ML security, zero trust, secrets, adversarial ML, runtime security, policy as code, supply chain, SecOps",
+     "band": "Assurance, Security & Safety (L35–L40)",
+     "learning": "https://github.com/ai-governance-curriculum/security-learning",
+     "solutions": "https://github.com/ai-governance-curriculum/security-solutions",
+     "modules": 24
+    },
+    {
+     "id": "agentic-safety-engineer",
+     "title": "Agentic Safety & Red-Team Engineer",
+     "level": 40,
+     "focus": "Agent threat modeling, prompt injection & jailbreaks, dangerous-capability evals, excessive-agency containment",
+     "band": "Assurance, Security & Safety (L35–L40)",
+     "learning": "https://github.com/ai-governance-curriculum/agentic-safety-engineer-learning",
+     "solutions": "https://github.com/ai-governance-curriculum/agentic-safety-engineer-solutions",
+     "modules": 12
+    },
+    {
+     "id": "senior-ai-governance-architect",
+     "title": "Senior AI Governance / Risk Architect",
+     "level": 50,
+     "focus": "AI control libraries, policy as code, multi-jurisdiction reconciliation, AI management systems, risk appetite",
+     "band": "Architect (L50)",
+     "learning": "https://github.com/ai-governance-curriculum/senior-ai-governance-architect-learning",
+     "solutions": "https://github.com/ai-governance-curriculum/senior-ai-governance-architect-solutions",
+     "modules": 13
+    },
+    {
+     "id": "head-of-ai-governance",
+     "title": "Head of AI Governance",
+     "level": 60,
+     "focus": "Running the program, board & audit reporting, regulator engagement, regulatory change, program maturity",
+     "band": "Executive (L60–L70)",
+     "learning": "https://github.com/ai-governance-curriculum/head-of-ai-governance-learning",
+     "solutions": "https://github.com/ai-governance-curriculum/head-of-ai-governance-solutions",
+     "modules": 13
+    },
+    {
+     "id": "chief-ai-officer",
+     "title": "Chief AI Officer",
+     "level": 70,
+     "focus": "AI regulation & risk, model risk management, responsible AI, AI security, audit evidence, board reporting",
+     "band": "Executive (L60–L70)",
+     "learning": "https://github.com/ai-governance-curriculum/chief-ai-officer-learning",
+     "solutions": "https://github.com/ai-governance-curriculum/chief-ai-officer-solutions",
+     "modules": 12
+    }
+   ]
+  },
+  {
+   "key": "ai-engineering",
+   "name": "AI Engineering",
+   "verb": "Build with the models",
+   "position": "above",
+   "org_url": "https://github.com/ai-engineering-curriculum",
+   "tagline": "A hands-on, role-based curriculum for engineers who build with AI — LLM apps, RAG, agents, and multi-agent systems, from first app to systems architect.",
+   "overview": "This org covers **AI engineering** — *building with* the models: LLM application development, retrieval and RAG, agents and multi-agent systems, evaluation, guardrails, harness engineering, and production operations. Every role track has a paired **learning** repository (modules, lecture chapters, exercises, quizzes) and a **solutions** repository with reference walkthroughs.",
+   "start": "agentic-ai-developer",
+   "single_repo": false,
+   "roles": [
+    {
+     "id": "agentic-ai-developer",
+     "title": "Agentic AI Developer",
+     "level": 20,
+     "focus": "LLM fundamentals, prompting & structured output, tool calling, retrieval basics, first agent, shipping",
+     "band": "Builder (L20)",
+     "learning": "https://github.com/ai-engineering-curriculum/agentic-ai-developer-learning",
+     "solutions": "https://github.com/ai-engineering-curriculum/agentic-ai-developer-solutions",
+     "modules": 6
+    },
+    {
+     "id": "llm-application-developer",
+     "title": "LLM Application Developer",
+     "level": 20,
+     "focus": "Prompting, tool calling, streaming & async, model selection, prompt caching, retrieval, minimal evals",
+     "band": "Builder (L20)",
+     "learning": "https://github.com/ai-engineering-curriculum/llm-application-developer-learning",
+     "solutions": "https://github.com/ai-engineering-curriculum/llm-application-developer-solutions",
+     "modules": 7
+    },
+    {
+     "id": "ai-eval-engineer",
+     "title": "AI Evaluation Engineer",
+     "level": 30,
+     "focus": "Trace instrumentation, trajectory & tool evals, LLM-as-judge, RAG evals, eval-gated CI/CD, online evals",
+     "band": "Engineer (L30)",
+     "learning": "https://github.com/ai-engineering-curriculum/ai-eval-engineer-learning",
+     "solutions": "https://github.com/ai-engineering-curriculum/ai-eval-engineer-solutions",
+     "modules": 12
+    },
+    {
+     "id": "agentic-ai-engineer",
+     "title": "Agentic AI Engineer",
+     "level": 30,
+     "focus": "Agent loop, frameworks, RAG & memory, multi-agent, evals, guardrails, production, harness engineering",
+     "band": "Engineer (L30)",
+     "learning": "https://github.com/ai-engineering-curriculum/agentic-ai-engineer-learning",
+     "solutions": "https://github.com/ai-engineering-curriculum/agentic-ai-engineer-solutions",
+     "modules": 9
+    },
+    {
+     "id": "applied-ai-engineer",
+     "title": "Applied AI Engineer",
+     "level": 30,
+     "focus": "AI feature design, production prompting, RAG in product, orchestration, product agents, guardrails",
+     "band": "Engineer (L30)",
+     "learning": "https://github.com/ai-engineering-curriculum/applied-ai-engineer-learning",
+     "solutions": "https://github.com/ai-engineering-curriculum/applied-ai-engineer-solutions",
+     "modules": 12
+    },
+    {
+     "id": "rag-engineer",
+     "title": "RAG & Retrieval Engineer",
+     "level": 30,
+     "focus": "Ingestion & chunking, embeddings, vector DBs & ANN tuning, learning-to-rank, hybrid retrieval, reranking",
+     "band": "Engineer (L30)",
+     "learning": "https://github.com/ai-engineering-curriculum/rag-engineer-learning",
+     "solutions": "https://github.com/ai-engineering-curriculum/rag-engineer-solutions",
+     "modules": 13
+    },
+    {
+     "id": "senior-agentic-ai-engineer",
+     "title": "Senior Agentic AI Engineer",
+     "level": 40,
+     "focus": "Agent systems from an architecture, eval & observability infra, multi-agent at scale, reliability, cost",
+     "band": "Senior & Architect (L40+)",
+     "learning": "https://github.com/ai-engineering-curriculum/senior-agentic-ai-engineer-learning",
+     "solutions": "https://github.com/ai-engineering-curriculum/senior-agentic-ai-engineer-solutions",
+     "modules": 5
+    },
+    {
+     "id": "agentic-systems-architect",
+     "title": "Agentic Systems Architect",
+     "level": 48,
+     "focus": "When not to use an agent, orchestration & memory architecture, eval harnesses, security, durable execution",
+     "band": "Senior & Architect (L40+)",
+     "learning": "https://github.com/ai-engineering-curriculum/agentic-systems-architect-learning",
+     "solutions": "https://github.com/ai-engineering-curriculum/agentic-systems-architect-solutions",
+     "modules": 10
+    }
+   ]
+  },
+  {
+   "key": "ml-engineering",
+   "name": "ML Engineering",
+   "verb": "Build and train the models",
+   "position": "below",
+   "org_url": "https://github.com/ml-engineering-curriculum",
+   "tagline": "A hands-on, role-based curriculum for engineers who build and train machine-learning models — from your first production model to principal-level ML strategy.",
+   "overview": "This org covers **ML engineering** — *building and training* the models: data pipelines, classical and deep learning, fine-tuning and alignment, evaluation, distributed training, and the senior-to-principal work of setting ML architecture and strategy. Every role track has a paired **learning** repository (modules, lecture chapters, exercises) and a **solutions** repository with reference walkthroughs.",
+   "start": "ml-engineer",
+   "single_repo": false,
+   "roles": [
+    {
+     "id": "ml-engineer",
+     "title": "Machine Learning Engineer",
+     "level": 20,
+     "focus": "ML foundations, data for ML, classical & deep learning, experiment tracking, deployment, drift monitoring",
+     "band": "Foundation (L20)",
+     "learning": "https://github.com/ml-engineering-curriculum/ml-engineer-learning",
+     "solutions": "https://github.com/ml-engineering-curriculum/ml-engineer-solutions",
+     "modules": 10
+    },
+    {
+     "id": "fine-tuning-engineer",
+     "title": "Fine-Tuning Engineer",
+     "level": 30,
+     "focus": "SFT data, PEFT (LoRA/QLoRA), preference optimization, safety tuning, distributed fine-tuning, quantization",
+     "band": "Specialist & Senior (L30–L35)",
+     "learning": "https://github.com/ml-engineering-curriculum/fine-tuning-engineer-learning",
+     "solutions": "https://github.com/ml-engineering-curriculum/fine-tuning-engineer-solutions",
+     "modules": 11
+    },
+    {
+     "id": "model-evaluation-engineer",
+     "title": "Model Evaluation Engineer",
+     "level": 30,
+     "focus": "Benchmarks, LLM eval harnesses, LLM-as-judge, human eval, agent & safety evals, production eval",
+     "band": "Specialist & Senior (L30–L35)",
+     "learning": "https://github.com/ml-engineering-curriculum/model-evaluation-engineer-learning",
+     "solutions": "https://github.com/ml-engineering-curriculum/model-evaluation-engineer-solutions",
+     "modules": 12
+    },
+    {
+     "id": "nlp-engineer",
+     "title": "NLP Engineer",
+     "level": 30,
+     "focus": "Tokenization, classical NLP, classification, extraction, QA, summarization, machine translation",
+     "band": "Specialist & Senior (L30–L35)",
+     "learning": "https://github.com/ml-engineering-curriculum/nlp-engineer-learning",
+     "solutions": "https://github.com/ml-engineering-curriculum/nlp-engineer-solutions",
+     "modules": 13
+    },
+    {
+     "id": "senior-ml-engineer",
+     "title": "Senior Machine Learning Engineer",
+     "level": 30,
+     "focus": "ML systems architecture, production LLM integration, experimentation at scale, ML SLOs, technical leadership",
+     "band": "Specialist & Senior (L30–L35)",
+     "learning": "https://github.com/ml-engineering-curriculum/senior-ml-engineer-learning",
+     "solutions": "https://github.com/ml-engineering-curriculum/senior-ml-engineer-solutions",
+     "modules": 10
+    },
+    {
+     "id": "training-pipeline-engineer",
+     "title": "Training Pipeline Engineer",
+     "level": 35,
+     "focus": "Distributed training, data pipelines at scale, cluster orchestration, checkpointing, elastic training, throughput",
+     "band": "Specialist & Senior (L30–L35)",
+     "learning": "https://github.com/ml-engineering-curriculum/training-pipeline-engineer-learning",
+     "solutions": "https://github.com/ml-engineering-curriculum/training-pipeline-engineer-solutions",
+     "modules": 10
+    },
+    {
+     "id": "staff-ml-engineer",
+     "title": "Staff Machine Learning Engineer",
+     "level": 40,
+     "focus": "Multi-team ML architecture, foundation-model training programs, ML platform strategy, capacity & TCO",
+     "band": "Staff & Principal (L40+)",
+     "learning": "https://github.com/ml-engineering-curriculum/staff-ml-engineer-learning",
+     "solutions": "https://github.com/ml-engineering-curriculum/staff-ml-engineer-solutions",
+     "modules": 10
+    },
+    {
+     "id": "principal-ml-engineer",
+     "title": "Principal Machine Learning Engineer",
+     "level": 48,
+     "focus": "Org & industry ML strategy, north-star ML architecture, influence without authority, the technical bar",
+     "band": "Staff & Principal (L40+)",
+     "learning": "https://github.com/ml-engineering-curriculum/principal-ml-engineer-learning",
+     "solutions": "https://github.com/ml-engineering-curriculum/principal-ml-engineer-solutions",
+     "modules": 6
+    }
+   ]
+  },
+  {
+   "key": "ai-infra",
+   "name": "AI Infrastructure",
+   "verb": "Run the platforms models live on",
+   "position": "below",
+   "org_url": "https://github.com/ai-infra-curriculum",
+   "tagline": "A comprehensive, hands-on learning path for AI Infrastructure Engineers — from entry level to principal.",
+   "overview": "This org covers **AI infrastructure** — *running* the platforms: foundational Python and Kubernetes through distributed training, GPU and LLM infrastructure, MLOps, platform engineering, performance, and enterprise architecture. Every role track has a paired **learning** repository (modules, lecture chapters, exercises, quizzes) and a **solutions** repository with reference walkthroughs.",
+   "start": "junior-engineer",
+   "single_repo": false,
+   "roles": [
+    {
+     "id": "junior-engineer",
+     "title": "Junior AI Infrastructure Engineer",
+     "level": 10,
+     "focus": "Python & ML basics, Linux & Docker, Kubernetes intro, cloud platforms, monitoring",
+     "band": "Entry Level (0-2 years)",
+     "learning": "https://github.com/ai-infra-curriculum/ai-infra-junior-engineer-learning",
+     "solutions": "https://github.com/ai-infra-curriculum/ai-infra-junior-engineer-solutions",
+     "modules": 10
+    },
+    {
+     "id": "engineer",
+     "title": "AI Infrastructure Engineer",
+     "level": 20,
+     "focus": "Production ML, distributed training, GPU computing, advanced Kubernetes, MLOps, LLM infra, IaC",
+     "band": "Entry Level (0-2 years)",
+     "learning": "https://github.com/ai-infra-curriculum/ai-infra-engineer-learning",
+     "solutions": "https://github.com/ai-infra-curriculum/ai-infra-engineer-solutions",
+     "modules": 10
+    },
+    {
+     "id": "ml-platform",
+     "title": "AI/ML Platform Engineer",
+     "level": 30,
+     "focus": "Platform architecture, multi-tenancy, serving at scale, platform APIs/SDKs, developer experience",
+     "band": "Intermediate Level (2-4 years)",
+     "learning": "https://github.com/ai-infra-curriculum/ai-infra-ml-platform-learning",
+     "solutions": "https://github.com/ai-infra-curriculum/ai-infra-ml-platform-solutions",
+     "modules": 9
+    },
+    {
+     "id": "mlops",
+     "title": "MLOps Engineer",
+     "level": 30,
+     "focus": "CI/CD for ML, model registry, feature stores, experiment tracking, drift detection, A/B testing",
+     "band": "Intermediate Level (2-4 years)",
+     "learning": "https://github.com/ai-infra-curriculum/ai-infra-mlops-learning",
+     "solutions": "https://github.com/ai-infra-curriculum/ai-infra-mlops-solutions",
+     "modules": 10
+    },
+    {
+     "id": "senior-engineer",
+     "title": "Senior AI Infrastructure Engineer",
+     "level": 30,
+     "focus": "Advanced Kubernetes (operators/CRDs), distributed training at scale, CUDA, multi-cloud, SRE",
+     "band": "Advanced Level (4-6 years)",
+     "learning": "https://github.com/ai-infra-curriculum/ai-infra-senior-engineer-learning",
+     "solutions": "https://github.com/ai-infra-curriculum/ai-infra-senior-engineer-solutions",
+     "modules": 10
+    },
+    {
+     "id": "performance",
+     "title": "AI Infrastructure Performance Engineer",
+     "level": 35,
+     "focus": "GPU utilization, inference latency, training efficiency, cost optimization, profiling",
+     "band": "Intermediate Level (2-4 years)",
+     "learning": "https://github.com/ai-infra-curriculum/ai-infra-performance-learning",
+     "solutions": "https://github.com/ai-infra-curriculum/ai-infra-performance-solutions",
+     "modules": 8
+    },
+    {
+     "id": "team-lead",
+     "title": "AI Infrastructure Team Lead",
+     "level": 40,
+     "focus": "Technical strategy & roadmaps, team building, ADRs, incident & performance management",
+     "band": "Leadership Level (6-10 years)",
+     "learning": "https://github.com/ai-infra-curriculum/ai-infra-team-lead-learning",
+     "solutions": "https://github.com/ai-infra-curriculum/ai-infra-team-lead-solutions",
+     "modules": 5
+    },
+    {
+     "id": "architect",
+     "title": "AI Infrastructure Architect",
+     "level": 45,
+     "focus": "Enterprise ML architecture, multi-cloud/hybrid, security & compliance, FinOps, HA/DR, LLM/RAG platforms",
+     "band": "Advanced Level (4-6 years)",
+     "learning": "https://github.com/ai-infra-curriculum/ai-infra-architect-learning",
+     "solutions": "https://github.com/ai-infra-curriculum/ai-infra-architect-solutions",
+     "modules": 10
+    },
+    {
+     "id": "principal-engineer",
+     "title": "Principal AI Infrastructure Engineer",
+     "level": 50,
+     "focus": "Deep technical expertise, extreme-scale distributed systems, novel infra solutions, mentorship",
+     "band": "Principal Level (8-15+ years)",
+     "learning": "https://github.com/ai-infra-curriculum/ai-infra-principal-engineer-learning",
+     "solutions": "https://github.com/ai-infra-curriculum/ai-infra-principal-engineer-solutions",
+     "modules": 5
+    },
+    {
+     "id": "senior-architect",
+     "title": "Senior AI Infrastructure Architect",
+     "level": 55,
+     "focus": "Cross-org architecture alignment, enterprise standards, multi-year roadmaps, executive communication",
+     "band": "Leadership Level (6-10 years)",
+     "learning": "https://github.com/ai-infra-curriculum/ai-infra-senior-architect-learning",
+     "solutions": "https://github.com/ai-infra-curriculum/ai-infra-senior-architect-solutions",
+     "modules": 10
+    },
+    {
+     "id": "principal-architect",
+     "title": "Principal AI Infrastructure Architect",
+     "level": 60,
+     "focus": "Company-wide strategy, multi-year roadmaps, technology selection, architecture governance",
+     "band": "Principal Level (8-15+ years)",
+     "learning": "https://github.com/ai-infra-curriculum/ai-infra-principal-architect-learning",
+     "solutions": "https://github.com/ai-infra-curriculum/ai-infra-principal-architect-solutions",
+     "modules": 5
+    }
+   ]
+  }
+ ]
+}
