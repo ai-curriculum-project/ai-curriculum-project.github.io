@@ -1,12 +1,141 @@
 {
  "orgs": [
   {
+   "key": "ai-workforce",
+   "name": "AI Workforce",
+   "verb": "Work alongside the models",
+   "position": "outer",
+   "org_url": "https://github.com/ai-workforce-curriculum",
+   "tagline": "A hands-on, role-based curriculum for professionals who work alongside AI: directing models and agents, checking their output, and redesigning the work around them.",
+   "login": "ai-workforce-curriculum",
+   "pages_url": "https://ai-workforce-curriculum.github.io/",
+   "technologies": {
+    "Coding agents": "Claude Code, Codex CLI, Cursor, GitHub Copilot",
+    "Assistants": "Claude, ChatGPT, Gemini, Microsoft Copilot",
+    "Analysis": "Jupyter, SQL, spreadsheets with AI assistance",
+    "Context & tooling": "CLAUDE.md / AGENTS.md, Model Context Protocol (MCP), skills & hooks",
+    "Governance": "Acceptable-use policies, NIST AI RMF, data-handling rules"
+   },
+   "stance": {
+    "verb": "work alongside",
+    "headline": "You **work alongside** the model: you direct it, check its output, and redesign your own work around it.",
+    "stance": "To you the model is a colleague with uneven skills: fast, tireless, often right, sometimes confidently wrong. You don't build or run it. You decide what to hand it, how to brief it, how to verify what comes back, and which parts of the job stay yours. Your craft is the judgment around the model, not the model itself.",
+    "owns": [
+     "Which tasks to delegate to models and agents, and which to keep",
+     "Briefing: the context, constraints, and examples that get usable output",
+     "Verification: reviewing, testing, and fact-checking what the model produces",
+     "Workflows and team habits that make AI-assisted work repeatable and safe",
+     "Accountability for the result, whoever (or whatever) drafted it"
+    ],
+    "not_owns": "The model, the tools built on it, or the policy that governs them. You're their most demanding user: you report where they fail real work and push for the fixes.",
+    "hands_to": {
+     "ai-infra": "Real usage patterns and pain points (latency, limits, outages) from people whose day depends on the tools",
+     "ml-engineering": "Concrete examples of where model quality falls short on real tasks, the raw material for better evals and training data",
+     "ai-engineering": "Workflow requirements and failure reports from daily use, which tell builders what to fix and what to build next",
+     "ai-governance": "How AI is actually being used on the ground, including the shadow uses policy hasn't caught up with",
+     "ai-startup": "Evidence of where AI changes the economics of a job, which is where the product and hiring bets are"
+    }
+   },
+   "overview": "This org covers **AI in everyday professional work**: *working alongside* the models. It's for engineers, analysts, product managers, and managers whose job isn't building AI but whose work now runs through it: delegating to coding agents and assistants, briefing them well, verifying what comes back, and building team habits that make AI-assisted work fast and safe. Every role track has a paired **learning** repository (modules, lecture chapters, exercises, quizzes) and a **solutions** repository with reference walkthroughs.",
+   "start": "ai-assisted-software-engineer",
+   "single_repo": false,
+   "roles": [
+    {
+     "id": "ai-assisted-software-engineer",
+     "title": "AI-Assisted Software Engineer",
+     "level": 20,
+     "focus": "Delegating to coding agents, writing specs & context, reviewing AI-written code, testing as verification, repo harnesses",
+     "band": "Practitioner (L20)",
+     "learning": "https://github.com/ai-workforce-curriculum/ai-assisted-software-engineer-learning",
+     "solutions": "https://github.com/ai-workforce-curriculum/ai-assisted-software-engineer-solutions",
+     "modules": 0
+    },
+    {
+     "id": "ai-augmented-analyst",
+     "title": "AI-Augmented Data Analyst",
+     "level": 20,
+     "focus": "AI-assisted analysis & SQL, checking generated numbers, notebook agents, reproducibility, communicating uncertainty",
+     "band": "Practitioner (L20)",
+     "learning": "https://github.com/ai-workforce-curriculum/ai-augmented-analyst-learning",
+     "solutions": "https://github.com/ai-workforce-curriculum/ai-augmented-analyst-solutions",
+     "modules": 0
+    },
+    {
+     "id": "ai-augmented-product-manager",
+     "title": "AI-Augmented Product Manager",
+     "level": 30,
+     "focus": "AI in discovery & specs, prototyping with agents, judging AI output quality, PRDs as context, shipping faster safely",
+     "band": "Product & Delivery (L30)",
+     "learning": "https://github.com/ai-workforce-curriculum/ai-augmented-product-manager-learning",
+     "solutions": "https://github.com/ai-workforce-curriculum/ai-augmented-product-manager-solutions",
+     "modules": 0
+    },
+    {
+     "id": "ai-augmented-team-manager",
+     "title": "AI-Augmented Team Manager",
+     "level": 40,
+     "focus": "Redesigning team workflows, review norms for AI-made work, measuring real productivity, skills & career growth",
+     "band": "Leadership (L40+)",
+     "learning": "https://github.com/ai-workforce-curriculum/ai-augmented-team-manager-learning",
+     "solutions": "https://github.com/ai-workforce-curriculum/ai-augmented-team-manager-solutions",
+     "modules": 0
+    },
+    {
+     "id": "ai-enablement-lead",
+     "title": "AI Enablement Lead",
+     "level": 45,
+     "focus": "Org-wide AI adoption: tool selection, usage policy, training programs, champions networks, measuring impact",
+     "band": "Leadership (L40+)",
+     "learning": "https://github.com/ai-workforce-curriculum/ai-enablement-lead-learning",
+     "solutions": "https://github.com/ai-workforce-curriculum/ai-enablement-lead-solutions",
+     "modules": 0
+    }
+   ]
+  },
+  {
    "key": "ai-startup",
    "name": "AI Startup",
    "verb": "Turn it into a company",
    "position": "outer",
    "org_url": "https://github.com/ai-startup-curriculum",
    "tagline": "An open-source startup operating school for technical founders — functional curricula × role pathways × startup stages.",
+   "login": "ai-startup-curriculum",
+   "pages_url": "https://ai-startup-curriculum.github.io/",
+   "technologies": {
+    "Validation": "Customer-discovery interview plans, PMF measurement, ICP and positioning docs",
+    "Finance": "Runway models, three-statement and driver-based forecasts, unit-economics and cohort models",
+    "Equity & fundraising": "Cap tables, SAFE and convertible scenarios, investor funnels",
+    "Operations & governance": "Entity and founder agreements, equity-comp policy, board packets",
+    "Exit": "Deal-structure comparisons, LOI term reviews, diligence data rooms"
+   },
+   "stance": {
+    "verb": "build a company around",
+    "headline": "You **build a company around** the model: you decide what it's for and who pays for it.",
+    "stance": "To you the model is a capability inside a business. You care whether it solves a problem customers will pay for, at a cost that leaves margin, with a story investors and regulators will accept. You make the calls about what to build, when, and with what money.",
+    "owns": [
+     "The problem, the customer, and the reason anyone pays",
+     "Build-versus-buy and which bets to make with limited runway",
+     "Pricing and margin, given what the model costs to run",
+     "Hiring: which of the other four orgs' roles you need, and when",
+     "Commitments to customers, investors, and regulators"
+    ],
+    "not_owns": "The technical details of any single layer. You need enough fluency to ask the right questions of each and to know when an answer doesn't add up.",
+    "hands_to": {
+     "ai-infra": "Growth forecasts, cost targets, and reliability commitments that set the platform's budget",
+     "ml-engineering": "The problems worth owning a model for, and the business case for the data and compute it takes",
+     "ai-engineering": "Prioritized customer problems, what's been promised, and what 'good enough to ship' means for this market",
+     "ai-governance": "The company's risk appetite, target markets, and customer commitments that set the compliance bar",
+     "ai-workforce": "Decisions about which AI tools the company adopts and how roles change, plus the training and time to adapt"
+    },
+    "path_levels": true,
+    "counterpart_for": {
+     "ai-infra": "cto",
+     "ml-engineering": "cto",
+     "ai-engineering": "cpo",
+     "ai-governance": "startup-operations-governance",
+     "ai-workforce": "startup-operations-governance"
+    }
+   },
    "overview": "This org covers **turning it into a company** — the operating knowledge technical founders need: how startups work as a system, customer discovery and product-market fit, go-to-market, finance and fundraising, operations and governance, and the endgame. Each curriculum is one self-contained repository, and you learn by building real **founder artifacts**, not reading case studies.",
    "start": "startup-foundations",
    "single_repo": true,
@@ -100,6 +229,37 @@
    "position": "outer",
    "org_url": "https://github.com/ai-governance-curriculum",
    "tagline": "A hands-on, role-based curriculum for governing, securing, and assuring AI — from analyst to Chief AI Officer.",
+   "login": "ai-governance-curriculum",
+   "pages_url": "https://ai-governance-curriculum.github.io/",
+   "technologies": {
+    "Regulation & standards": "EU AI Act, NIST AI RMF, ISO/IEC 42001, SR 11-7",
+    "Threat frameworks": "OWASP (incl. LLM Top 10), MITRE ATLAS",
+    "Policy as code": "Open Policy Agent (OPA), Kyverno",
+    "Supply chain": "Sigstore / Cosign, SLSA",
+    "Infrastructure & secrets": "HashiCorp Vault, Kubernetes, Terraform, GitHub Actions",
+    "Explainability": "SHAP",
+    "Model platforms": "Hugging Face, OpenAI, Anthropic"
+   },
+   "stance": {
+    "verb": "govern & assure",
+    "headline": "You **govern and assure** the model: you decide whether a use is acceptable and prove it stays that way.",
+    "stance": "To you the model is a risk to be understood and managed: to people, to the organization, and to compliance. You don't usually build or run it. You set the rules it operates under, test it adversarially, and hold the evidence that it behaves as claimed.",
+    "owns": [
+     "Policy: acceptable use, risk tiers, and approval gates",
+     "Risk and impact assessments mapped to frameworks (NIST AI RMF, ISO/IEC 42001, EU AI Act)",
+     "Independent evaluation, red-teaming, and safety testing",
+     "Security of AI systems: prompt injection, data leakage, and supply chain",
+     "Model inventory, documentation, audit, and incident review"
+    ],
+    "not_owns": "The implementation. You define what 'safe enough' means and verify it; the builders and operators make it so.",
+    "hands_to": {
+     "ai-infra": "Control requirements (logging, access, retention, residency) and the evidence they need to produce",
+     "ml-engineering": "Data-use rules, documentation standards, and the risk-based evaluation bar a model must clear",
+     "ai-engineering": "Risk tiers, guardrail requirements, and red-team findings to fix before (and after) launch",
+     "ai-startup": "A defensible position for customers, regulators, and investors, and early warning on uses that would sink the company",
+     "ai-workforce": "Clear rules on what may be shared with which tools, and which uses need review, written so people can follow them"
+    }
+   },
    "overview": "This org covers **AI governance** — *governing, securing and assuring* AI: inventories and risk assessments, red-teaming and adversarial ML, release assurance and evaluation evidence, ML security, agentic safety, enterprise control architecture, and executive leadership of an AI governance program. Every role track has a paired **learning** repository and a **solutions** repository with reference walkthroughs.",
    "start": "ai-governance-analyst",
    "single_repo": false,
@@ -136,7 +296,7 @@
     },
     {
      "id": "ai-evaluation-engineer",
-     "title": "AI Evaluation Engineer",
+     "title": "AI Assurance Engineer",
      "level": 35,
      "focus": "Release assurance, assurance cases, release gates, evaluation evidence pipelines, cross-jurisdiction obligations",
      "band": "Assurance, Privacy, Security & Safety (L30–L45)",
@@ -213,6 +373,38 @@
    "position": "above",
    "org_url": "https://github.com/ai-engineering-curriculum",
    "tagline": "A hands-on, role-based curriculum for engineers who build with AI — LLM apps, RAG, agents, and multi-agent systems, from first app to systems architect.",
+   "login": "ai-engineering-curriculum",
+   "pages_url": "https://ai-engineering-curriculum.github.io/",
+   "technologies": {
+    "Model APIs": "Anthropic, OpenAI",
+    "Agent frameworks": "LangGraph, CrewAI, AutoGen, LangChain, LlamaIndex",
+    "Tools & protocols": "Model Context Protocol (MCP), Pydantic, FastAPI",
+    "Coding-agent harnesses": "Claude Code, Codex CLI, Claude Agent SDK",
+    "Retrieval": "pgvector, Chroma, Qdrant, BM25 hybrid search, reranking",
+    "Production": "Temporal, Docker, Kubernetes, GitHub Actions",
+    "Observability & evals": "OpenTelemetry, Langfuse, LangSmith, Phoenix, Ragas, Inspect",
+    "Safety & governance": "OWASP LLM Top 10, NIST AI RMF, EU AI Act"
+   },
+   "stance": {
+    "verb": "build with",
+    "headline": "You **build with** the model: you turn it into products and agents people use.",
+    "stance": "To you the model is a component, usually one you didn't train and can't change. You shape its behavior from the outside with prompts, context, retrieval, tools, and orchestration, and you're responsible for what it does inside your product.",
+    "owns": [
+     "Prompts, context, and retrieval that steer model behavior",
+     "Tools, agents, and multi-step orchestration",
+     "Product-level evaluation: does the feature actually work for users?",
+     "Guardrails and fallbacks in the application layer",
+     "Choosing which model to call for which job"
+    ],
+    "not_owns": "Training the model, operating the serving fleet, or setting organizational policy. You work inside those constraints and report back when they don't fit the product.",
+    "hands_to": {
+     "ai-infra": "Traffic shapes, latency budgets, and model-mix requirements, so capacity and routing match how the product actually calls models",
+     "ml-engineering": "Real failure cases and task data from production, which tell them where a fine-tune or a different model would actually help",
+     "ai-governance": "System descriptions, eval results, and guardrail designs for each AI feature, plus incident reports when something goes wrong",
+     "ai-startup": "Working features, honest demos, and a clear picture of what the product can promise customers today",
+     "ai-workforce": "Tools, agents, and integrations that fit how people actually work, with sensible defaults and guardrails"
+    }
+   },
    "overview": "This org covers **AI engineering** — *building with* the models: LLM application development, retrieval and RAG, agents and multi-agent systems, evaluation, guardrails, harness engineering, and production operations. Every role track has a paired **learning** repository (modules, lecture chapters, exercises, quizzes) and a **solutions** repository with reference walkthroughs.",
    "start": "agentic-ai-developer",
    "single_repo": false,
@@ -225,17 +417,7 @@
      "band": "Builder (L20)",
      "learning": "https://github.com/ai-engineering-curriculum/agentic-ai-developer-learning",
      "solutions": "https://github.com/ai-engineering-curriculum/agentic-ai-developer-solutions",
-     "modules": 6
-    },
-    {
-     "id": "llm-application-developer",
-     "title": "LLM Application Developer",
-     "level": 20,
-     "focus": "Prompting, tool calling, streaming & async, model selection, prompt caching, retrieval, minimal evals",
-     "band": "Builder (L20)",
-     "learning": "https://github.com/ai-engineering-curriculum/llm-application-developer-learning",
-     "solutions": "https://github.com/ai-engineering-curriculum/llm-application-developer-solutions",
-     "modules": 7
+     "modules": 9
     },
     {
      "id": "ai-eval-engineer",
@@ -346,6 +528,36 @@
    "position": "below",
    "org_url": "https://github.com/ml-engineering-curriculum",
    "tagline": "A hands-on, role-based curriculum for engineers who build and train machine-learning models — from your first production model to principal-level ML strategy.",
+   "login": "ml-engineering-curriculum",
+   "pages_url": "https://ml-engineering-curriculum.github.io/",
+   "technologies": {
+    "Languages & frameworks": "Python, PyTorch, JAX",
+    "Distributed training": "FSDP, DeepSpeed, Megatron, NCCL, CUDA, Triton",
+    "Fine-tuning & alignment": "SFT, PEFT (LoRA/QLoRA), preference optimization, quantization",
+    "Orchestration": "Ray, Kubernetes, Slurm",
+    "Experiment tracking": "MLflow, Weights & Biases",
+    "Evaluation": "Benchmark harnesses, LLM-as-judge, human evaluation, red-team evals"
+   },
+   "stance": {
+    "verb": "build & train",
+    "headline": "You **build and train** the model: you decide what it learns.",
+    "stance": "To you the model is an artifact you shape: data, architecture, training objective, fine-tuning, and evaluation against the behavior you want. You change what the model knows and how it behaves, and you are the one who can say why it got better or worse.",
+    "owns": [
+     "Training data: sourcing, curation, labeling, and quality",
+     "Training and fine-tuning: objectives, recipes, and experiments",
+     "Model-level evaluation: benchmarks, regressions, and comparisons",
+     "Model artifacts: versions, model cards, and lineage",
+     "Choosing between training, fine-tuning, distilling, or using a vendor model as-is"
+    ],
+    "not_owns": "The serving fleet, the product features built on top, or the final call on whether a use is acceptable. You hand off a model with evidence of what it can and can't do.",
+    "hands_to": {
+     "ai-infra": "Model artifacts with known resource profiles (memory, throughput, precision) and the training workloads they need to schedule",
+     "ai-engineering": "Models, fine-tunes, and embeddings with documented strengths, failure modes, and benchmark results on relevant tasks",
+     "ai-governance": "Data provenance, model cards, training-data documentation, and evaluation results they can audit",
+     "ai-startup": "An honest read on what's technically feasible, how long it takes, and what it costs to own a model versus renting one",
+     "ai-workforce": "Models that are better at real work, plus honest documentation of what they're bad at"
+    }
+   },
    "overview": "This org covers **ML engineering** — *building and training* the models: data pipelines, classical and deep learning, fine-tuning and alignment, evaluation, distributed training, and the senior-to-principal work of setting ML architecture and strategy. Every role track has a paired **learning** repository (modules, lecture chapters, exercises) and a **solutions** repository with reference walkthroughs.",
    "start": "ml-engineer",
    "single_repo": false,
@@ -449,6 +661,38 @@
    "position": "below",
    "org_url": "https://github.com/ai-infra-curriculum",
    "tagline": "A comprehensive, hands-on learning path for AI Infrastructure Engineers — from entry level to principal.",
+   "login": "AI-Infra-Curriculum",
+   "pages_url": "https://ai-infra-curriculum.github.io/",
+   "technologies": {
+    "Languages": "Python, Bash, HCL (Terraform), YAML",
+    "ML frameworks": "PyTorch, TensorFlow, scikit-learn",
+    "Orchestration": "Kubernetes, Helm, ArgoCD, FluxCD",
+    "Cloud & containers": "AWS, GCP, Azure, Docker, containerd",
+    "MLOps": "MLflow, Kubeflow, DVC, Feast",
+    "Observability": "Prometheus, Grafana, Loki, Jaeger",
+    "IaC & CI/CD": "Terraform, Pulumi, GitHub Actions, GitLab CI",
+    "LLMs & GPU": "vLLM, Llama, Mistral, RAG, CUDA, NCCL, TensorRT"
+   },
+   "stance": {
+    "verb": "run",
+    "headline": "You **run** the model: you keep it available, fast, and affordable.",
+    "stance": "To you the model is a workload. It needs GPUs, memory, networks, storage, and a serving stack, and it has to meet latency, uptime, and cost targets under real traffic. You rarely change what the model says; you change whether, how fast, and at what cost it says it.",
+    "owns": [
+     "Compute: GPU/accelerator capacity, clusters, scheduling, and quotas",
+     "Serving: inference engines, batching, autoscaling, routing, and rollouts",
+     "Pipelines and platforms that training and evaluation jobs run on",
+     "Reliability: SLOs, observability, on-call, and incident response for AI systems",
+     "Cost: the infrastructure bill and the levers that move it"
+    ],
+    "not_owns": "What the model is trained on, what the product asks it to do, or whether a use is allowed. You give those owners the platform and the numbers they need to decide.",
+    "hands_to": {
+     "ml-engineering": "Training and fine-tuning clusters, experiment and artifact storage, and a path to production for the models they produce",
+     "ai-engineering": "Serving endpoints with known latency, throughput, rate limits, and cost per call, plus the telemetry to debug them",
+     "ai-governance": "Audit logs, access controls, data-residency guarantees, and evidence that controls actually run in production",
+     "ai-startup": "Unit economics: what each request, user, or customer costs to serve, and how that changes with scale",
+     "ai-workforce": "Reliable, fast, well-documented AI tools with clear limits, so a working day doesn't stall on an outage or a rate limit"
+    }
+   },
    "overview": "This org covers **AI infrastructure** — *running* the platforms: foundational Python and Kubernetes through distributed training, GPU and LLM infrastructure, MLOps, platform engineering, performance, and enterprise architecture. Every role track has a paired **learning** repository (modules, lecture chapters, exercises, quizzes) and a **solutions** repository with reference walkthroughs.",
    "start": "junior-engineer",
    "single_repo": false,

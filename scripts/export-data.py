@@ -23,6 +23,7 @@ GEN = SITE.parent / "ai-infra-content-generator"
 
 # Stack order, top to bottom, with each org's position relative to the model.
 ORGS = [
+    ("ai-workforce", "AI Workforce", "Work alongside the models", "outer"),
     ("ai-startup", "AI Startup", "Turn it into a company", "outer"),
     ("ai-governance", "AI Governance", "Govern, secure, and assure AI", "outer"),
     ("ai-engineering", "AI Engineering", "Build with the models", "above"),
@@ -58,6 +59,9 @@ def band_for(role: dict, bands: list[dict] | None) -> str:
     return ""
 
 
+STANCES = json.loads((GEN / "config" / "stances.json").read_text())["domains"]
+
+
 def export_org(key: str, name: str, verb: str, position: str) -> dict:
     manifest = json.loads(manifest_path(key).read_text())
     profile = json.loads((GEN / "config" / "profiles" / f"{key}.json").read_text())
@@ -76,6 +80,8 @@ def export_org(key: str, name: str, verb: str, position: str) -> dict:
     return {
         "key": key, "name": name, "verb": verb, "position": position,
         "org_url": f"https://github.com/{org}", "tagline": profile["tagline"],
+        "login": manifest["org"], "pages_url": f"https://{org}.github.io/",
+        "technologies": profile.get("technologies", {}), "stance": STANCES[key],
         "overview": profile["overview"], "start": start["id"],
         "single_repo": all(r["solutions"] is None for r in roles), "roles": roles,
     }
