@@ -65,6 +65,9 @@ def org_sites() -> list[Path]:
         (out / "index.html").write_text(render_org_page(org, DATA["orgs"], template), encoding="utf-8")
         for asset in SHARED_ASSETS:
             shutil.copy(SITE / asset, out / asset)
+        legacy = SITE / "legacy" / org["key"]
+        if legacy.is_dir():  # redirect pages for old URLs that now land on this org's site
+            shutil.copytree(legacy, out, dirs_exist_ok=True)
         written.append(out)
     return written
 
