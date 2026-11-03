@@ -29,7 +29,7 @@ for o in json.load(open(sys.argv[1]))["orgs"]:
 
 publish_one() {
   local key="$1" login="$2"
-  local owner repo work
+  local owner repo work out
   owner="$(printf '%s' "$login" | tr '[:upper:]' '[:lower:]')"
   repo="$owner.github.io"
   [[ -d "$DIST/$key" ]] || die "missing $DIST/$key"
@@ -38,7 +38,10 @@ publish_one() {
   # used to be ai-infra-curriculum/ai-infra-curriculum.github.io), so check the
   # canonical name: never publish into a repo that merely redirects here.
   local actual
-  actual="$(gh api "repos/$owner/$repo" --jq .full_name 2>/dev/null | tr '[:upper:]' '[:lower:]' || true)"
+  actual=""
+  if out="$(gh api "repos/$owner/$repo" --jq .full_name 2>/dev/null)"; then
+    actual="$(printf '%s' "$out" | tr '[:upper:]' '[:lower:]')"
+  fi
   if [[ "$actual" != "$owner/$repo" ]]; then
     [[ -n "$actual" ]] && log "$owner/$repo: currently redirects to $actual; creating the real repo"
     log "$owner/$repo: creating"
@@ -76,9 +79,11 @@ EOF
       log "$owner/$repo: published"
     fi
   )
+  # GitHub usually enables Pages on its own for <org>.github.io repos; only
+  # turn it on if it's still off.
   if ! gh api "repos/$owner/$repo/pages" >/dev/null 2>&1; then
-    gh api -X POST "repos/$owner/$repo/pages" -f "source[branch]=main" -f "source[path]=/" >/dev/null \
-      && log "$owner/$repo: Pages enabled"
+    gh api -X POST "repos/$owner/$repo/pages" -f "source[branch]=main" -f "source[path]=/" \
+      >/dev/null 2>&1 && log "$owner/$repo: Pages enabled" || true
   fi
   log "$owner/$repo: https://$repo/"
 }
