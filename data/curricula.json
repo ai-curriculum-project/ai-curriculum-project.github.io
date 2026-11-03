@@ -258,6 +258,16 @@
      "modules": 13
     },
     {
+     "id": "forward-deployed-engineer",
+     "title": "Forward Deployed AI Engineer",
+     "level": 35,
+     "focus": "Customer discovery, integrating into enterprise stacks, evals on customer data, demo→production, field feedback loops",
+     "band": "Engineer (L30)",
+     "learning": "https://github.com/ai-engineering-curriculum/forward-deployed-engineer-learning",
+     "solutions": "https://github.com/ai-engineering-curriculum/forward-deployed-engineer-solutions",
+     "modules": 0
+    },
+    {
      "id": "senior-agentic-ai-engineer",
      "title": "Senior Agentic AI Engineer",
      "level": 40,
@@ -432,6 +442,16 @@
      "learning": "https://github.com/ai-infra-curriculum/ai-infra-senior-engineer-learning",
      "solutions": "https://github.com/ai-infra-curriculum/ai-infra-senior-engineer-solutions",
      "modules": 10
+    },
+    {
+     "id": "inference-engineer",
+     "title": "AI Inference Engineer",
+     "level": 35,
+     "focus": "Serving engines (vLLM, TensorRT-LLM, SGLang), batching & KV cache, quantization, routing, GPU autoscaling, latency/cost SLOs",
+     "band": "Intermediate Level (2-4 years)",
+     "learning": "https://github.com/ai-infra-curriculum/ai-infra-inference-engineer-learning",
+     "solutions": "https://github.com/ai-infra-curriculum/ai-infra-inference-engineer-solutions",
+     "modules": 0
     },
     {
      "id": "performance",
