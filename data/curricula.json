@@ -125,11 +125,21 @@
      "modules": 12
     },
     {
+     "id": "ai-privacy-engineer",
+     "title": "AI Privacy Engineer",
+     "level": 30,
+     "focus": "Data minimization, PII detection & redaction, memorization & extraction risk, consent & DSRs for models, GDPR/state-law reviews",
+     "band": "Assurance, Privacy, Security & Safety (L30–L45)",
+     "learning": "https://github.com/ai-governance-curriculum/ai-privacy-engineer-learning",
+     "solutions": "https://github.com/ai-governance-curriculum/ai-privacy-engineer-solutions",
+     "modules": 0
+    },
+    {
      "id": "ai-evaluation-engineer",
      "title": "AI Evaluation Engineer",
      "level": 35,
      "focus": "Release assurance, assurance cases, release gates, evaluation evidence pipelines, cross-jurisdiction obligations",
-     "band": "Assurance, Security & Safety (L35–L40)",
+     "band": "Assurance, Privacy, Security & Safety (L30–L45)",
      "learning": "https://github.com/ai-governance-curriculum/ai-evaluation-engineer-learning",
      "solutions": "https://github.com/ai-governance-curriculum/ai-evaluation-engineer-solutions",
      "modules": 12
@@ -139,7 +149,7 @@
      "title": "AI/ML Security & Governance Engineer",
      "level": 35,
      "focus": "ML security, zero trust, secrets, adversarial ML, runtime security, policy as code, supply chain, SecOps",
-     "band": "Assurance, Security & Safety (L35–L40)",
+     "band": "Assurance, Privacy, Security & Safety (L30–L45)",
      "learning": "https://github.com/ai-governance-curriculum/security-learning",
      "solutions": "https://github.com/ai-governance-curriculum/security-solutions",
      "modules": 24
@@ -149,10 +159,20 @@
      "title": "Agentic Safety & Red-Team Engineer",
      "level": 40,
      "focus": "Agent threat modeling, prompt injection & jailbreaks, dangerous-capability evals, excessive-agency containment",
-     "band": "Assurance, Security & Safety (L35–L40)",
+     "band": "Assurance, Privacy, Security & Safety (L30–L45)",
      "learning": "https://github.com/ai-governance-curriculum/agentic-safety-engineer-learning",
      "solutions": "https://github.com/ai-governance-curriculum/agentic-safety-engineer-solutions",
      "modules": 12
+    },
+    {
+     "id": "ai-auditor",
+     "title": "AI Auditor",
+     "level": 45,
+     "focus": "Audit planning vs ISO/IEC 42001, NIST AI RMF & EU AI Act, evidence sampling, control testing, findings, assurance reports",
+     "band": "Assurance, Privacy, Security & Safety (L30–L45)",
+     "learning": "https://github.com/ai-governance-curriculum/ai-auditor-learning",
+     "solutions": "https://github.com/ai-governance-curriculum/ai-auditor-solutions",
+     "modules": 0
     },
     {
      "id": "senior-ai-governance-architect",
@@ -268,6 +288,26 @@
      "modules": 0
     },
     {
+     "id": "voice-agent-engineer",
+     "title": "Voice & Multimodal Agent Engineer",
+     "level": 35,
+     "focus": "STT/TTS & speech-to-speech, latency & turn-taking, telephony/WebRTC, vision inputs, voice & multimodal evals",
+     "band": "Engineer (L30)",
+     "learning": "https://github.com/ai-engineering-curriculum/voice-agent-engineer-learning",
+     "solutions": "https://github.com/ai-engineering-curriculum/voice-agent-engineer-solutions",
+     "modules": 0
+    },
+    {
+     "id": "agent-platform-engineer",
+     "title": "Agent Platform Engineer",
+     "level": 40,
+     "focus": "Internal agent platforms: harnesses, tool & MCP registries, sandboxing, permissions, shared evals & tracing, paved roads",
+     "band": "Senior & Architect (L40+)",
+     "learning": "https://github.com/ai-engineering-curriculum/agent-platform-engineer-learning",
+     "solutions": "https://github.com/ai-engineering-curriculum/agent-platform-engineer-solutions",
+     "modules": 0
+    },
+    {
      "id": "senior-agentic-ai-engineer",
      "title": "Senior Agentic AI Engineer",
      "level": 40,
@@ -276,6 +316,16 @@
      "learning": "https://github.com/ai-engineering-curriculum/senior-agentic-ai-engineer-learning",
      "solutions": "https://github.com/ai-engineering-curriculum/senior-agentic-ai-engineer-solutions",
      "modules": 5
+    },
+    {
+     "id": "ai-engineering-manager",
+     "title": "AI Engineering Manager",
+     "level": 45,
+     "focus": "Hiring & leveling AI roles, planning non-deterministic work, eval-driven delivery, vendor risk, teams that use coding agents",
+     "band": "Senior & Architect (L40+)",
+     "learning": "https://github.com/ai-engineering-curriculum/ai-engineering-manager-learning",
+     "solutions": "https://github.com/ai-engineering-curriculum/ai-engineering-manager-solutions",
+     "modules": 0
     },
     {
      "id": "agentic-systems-architect",
@@ -309,6 +359,16 @@
      "learning": "https://github.com/ml-engineering-curriculum/ml-engineer-learning",
      "solutions": "https://github.com/ml-engineering-curriculum/ml-engineer-solutions",
      "modules": 10
+    },
+    {
+     "id": "ai-data-engineer",
+     "title": "AI Data Engineer",
+     "level": 30,
+     "focus": "Data sourcing & licensing, curation & dedup, labeling ops, synthetic data, contamination checks, dataset versioning",
+     "band": "Specialist & Senior (L30–L35)",
+     "learning": "https://github.com/ml-engineering-curriculum/ai-data-engineer-learning",
+     "solutions": "https://github.com/ml-engineering-curriculum/ai-data-engineer-solutions",
+     "modules": 0
     },
     {
      "id": "fine-tuning-engineer",
@@ -462,6 +522,16 @@
      "learning": "https://github.com/ai-infra-curriculum/ai-infra-performance-learning",
      "solutions": "https://github.com/ai-infra-curriculum/ai-infra-performance-solutions",
      "modules": 8
+    },
+    {
+     "id": "sre",
+     "title": "AI Reliability Engineer (AI SRE)",
+     "level": 35,
+     "focus": "SLOs for model-backed services, LLM & GPU observability, incident response for non-deterministic failures, provider dependency risk, chaos testing",
+     "band": "Intermediate Level (2-4 years)",
+     "learning": "https://github.com/ai-infra-curriculum/ai-infra-sre-learning",
+     "solutions": "https://github.com/ai-infra-curriculum/ai-infra-sre-solutions",
+     "modules": 0
     },
     {
      "id": "team-lead",
