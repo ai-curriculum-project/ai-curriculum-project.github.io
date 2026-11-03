@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI Career Curriculum — free courses for every layer of the AI stack</title>
-<meta name="description" content="Five free, open-source curricula covering the whole AI stack: infrastructure, ML engineering, AI engineering, governance, and startups. {{TRACKS}} role tracks, each with learning and solutions repos on GitHub.">
+<meta name="description" content="{{COUNT_WORD}} free, open-source curricula for every way you work with AI: infrastructure, ML engineering, AI engineering, governance, startups, and everyday AI-augmented work. {{TRACKS}} role tracks on GitHub.">
 <meta property="og:title" content="AI Career Curriculum">
-<meta property="og:description" content="Free, open-source courses for every layer of the AI stack. {{TRACKS}} role tracks across five curricula on GitHub.">
+<meta property="og:description" content="Free, open-source courses for every layer of the AI stack. {{TRACKS}} role tracks across {{COUNT_LOWER}} curricula on GitHub.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://ai-infra-curriculum.github.io/">
-<link rel="canonical" href="https://ai-infra-curriculum.github.io/">
+<meta property="og:url" content="https://ai-curriculum-project.github.io/">
+<link rel="canonical" href="https://ai-curriculum-project.github.io/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
 <header class="top">
   <nav class="top__nav" aria-label="Main navigation">
     <a class="top__brand" href="/">AI Career Curriculum</a>
-    <a class="top__gh" href="https://github.com/ai-infra-curriculum">GitHub</a>
+    <a class="top__gh" href="https://github.com/ai-curriculum-project">GitHub</a>
   </nav>
 </header>
 
@@ -32,13 +32,13 @@
 <section class="hero" aria-labelledby="hero-h">
   <div class="hero__text">
     <h1 id="hero-h">Free courses for every layer of the AI stack.</h1>
-    <p class="hero__sub">Five open-source curricula, organized by what you do relative to a model: run it, train it, build with it, govern it, or build a company on it.</p>
+    <p class="hero__sub">{{COUNT_WORD}} open-source curricula, organized by what you do relative to a model: work alongside it, build a company on it, govern it, build with it, train it, or run it.</p>
     <p class="hero__facts">{{TRACKS}} role tracks and {{MODULES}} modules, from first job to principal. Every track is a pair of GitHub repos: one to learn from, one to check your work against. All of it is free and MIT-licensed.</p>
     <p class="hero__hint">Pick a layer to see its tracks.</p>
   </div>
   <figure class="hero__figure">
     {{STACK}}
-    <figcaption class="visually-hidden">Five curricula arranged around the model: AI Startup and AI Governance on the outside, AI Engineering above the model, ML Engineering and AI Infrastructure below it.</figcaption>
+    <figcaption class="visually-hidden">{{COUNT_WORD}} curricula arranged around the model: AI Workforce, AI Startup, and AI Governance on the outside, AI Engineering above the model, ML Engineering and AI Infrastructure below it.</figcaption>
   </figure>
 </section>
 
@@ -49,7 +49,7 @@
   <div class="how__grid">
     <div>
       <h3>Learn</h3>
-      <p>Each learning repo is a sequence of modules: lecture chapters, hands-on exercises, quizzes, and projects. Start with the first module and work forward.</p>
+      <p>Each learning repo is a sequence of modules: lecture chapters, hands-on exercises, quizzes, and projects. Start with Module 00 and work forward.</p>
     </div>
     <div>
       <h3>Check your work</h3>
@@ -65,14 +65,8 @@
 </main>
 
 <footer class="foot">
-  <p>Maintained by <a href="https://veriswarm.ai">VeriSwarm.ai</a>. <a href="https://github.com/sponsors/ai-infra-curriculum">Sponsor the curriculum</a> to keep it free.</p>
-  <ul class="foot__orgs" aria-label="The five curriculum organizations on GitHub">
-    <li><a href="https://github.com/ai-infra-curriculum">AI Infrastructure</a></li>
-    <li><a href="https://github.com/ml-engineering-curriculum">ML Engineering</a></li>
-    <li><a href="https://github.com/ai-engineering-curriculum">AI Engineering</a></li>
-    <li><a href="https://github.com/ai-governance-curriculum">AI Governance</a></li>
-    <li><a href="https://github.com/ai-startup-curriculum">AI Startup</a></li>
-  </ul>
+  <p>Maintained by <a href="https://veriswarm.ai">VeriSwarm.ai</a>. <a href="https://github.com/sponsors/ai-infra-curriculum">Sponsor the curriculum</a> to keep it free. Each curriculum also has its own site, linked below.</p>
+  {{ORG_LINKS}}
 </footer>
 
 </body>

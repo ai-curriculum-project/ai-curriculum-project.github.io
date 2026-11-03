@@ -15,6 +15,7 @@
   --aieng: #2a43b0;   --aieng-tint: #dce1f6;
   --gov: #663a70;     --gov-tint: #e9ddec;
   --startup: #3f6a2a; --startup-tint: #dde9d4;
+  --work: #96392c;    --work-tint: #f4e0da;
 
   --font-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", sans-serif;
   --font-body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
@@ -132,12 +133,6 @@ a { color: inherit; }
   border-radius: 999px;
 }
 
-.layer--ai-infra       { --hue: var(--infra);   --tint: var(--infra-tint); }
-.layer--ml-engineering { --hue: var(--ml);      --tint: var(--ml-tint); }
-.layer--ai-engineering { --hue: var(--aieng);   --tint: var(--aieng-tint); }
-.layer--ai-governance  { --hue: var(--gov);     --tint: var(--gov-tint); }
-.layer--ai-startup     { --hue: var(--startup); --tint: var(--startup-tint); }
-
 /* The one orchestrated moment: layers open out from the model on load. */
 @media (prefers-reduced-motion: no-preference) {
   .stack__core { animation: core-in 420ms var(--ease-out) both; }
@@ -152,7 +147,6 @@ a { color: inherit; }
 /* ---- one section per org -------------------------------------------------- */
 
 .org {
-  --hue: var(--ink); --tint: var(--surface);
   display: grid; gap: var(--gap);
   padding-block: clamp(2.5rem, 1.5rem + 3vw, 4rem) var(--space-section);
   border-top: 5px solid var(--hue);
@@ -163,11 +157,14 @@ a { color: inherit; }
   .org__intro { position: sticky; top: 1.5rem; align-self: start; }
 }
 
-.org--ai-infra       { --hue: var(--infra);   --tint: var(--infra-tint); }
-.org--ml-engineering { --hue: var(--ml);      --tint: var(--ml-tint); }
-.org--ai-engineering { --hue: var(--aieng);   --tint: var(--aieng-tint); }
-.org--ai-governance  { --hue: var(--gov);     --tint: var(--gov-tint); }
-.org--ai-startup     { --hue: var(--startup); --tint: var(--startup-tint); }
+/* One hue per org, applied by theme class (sections, cards, whole org pages)
+   or layer class (the stack). */
+.theme--ai-infra,       .layer--ai-infra       { --hue: var(--infra);   --tint: var(--infra-tint); }
+.theme--ml-engineering, .layer--ml-engineering { --hue: var(--ml);      --tint: var(--ml-tint); }
+.theme--ai-engineering, .layer--ai-engineering { --hue: var(--aieng);   --tint: var(--aieng-tint); }
+.theme--ai-governance,  .layer--ai-governance  { --hue: var(--gov);     --tint: var(--gov-tint); }
+.theme--ai-startup,     .layer--ai-startup     { --hue: var(--startup); --tint: var(--startup-tint); }
+.theme--ai-workforce,   .layer--ai-workforce   { --hue: var(--work);    --tint: var(--work-tint); }
 
 .org h2 {
   font-size: var(--text-h2); font-weight: 700; line-height: 1.05; letter-spacing: -0.022em;
@@ -240,3 +237,74 @@ a { color: inherit; }
   .stack__layer { --w: 100% !important; }
   .stack__core { --w: 70%; }
 }
+
+/* ---- org pages ------------------------------------------------------------ */
+
+.top__links { display: flex; gap: 1.25rem; }
+
+.eyebrow {
+  font-size: var(--text-small); font-weight: 600; letter-spacing: 0.04em;
+  text-transform: uppercase; color: var(--ink-soft); margin-bottom: 1rem;
+}
+.eyebrow a { color: var(--hue); text-underline-offset: 3px; }
+.page-org .hero h1 { color: var(--hue); max-width: 16ch; }
+.page-org .hero__sub { max-width: 40ch; }
+.page-org .hero__sub strong { color: var(--hue); }
+.hero__caption { margin-top: 0.9rem; font-size: var(--text-small); color: var(--ink-soft); text-align: center; }
+
+/* "You are here": the current org's layer is solid, the others stay tinted. */
+.layer--here { background: var(--hue); color: var(--surface); box-shadow: 0 6px 18px -10px var(--hue); }
+.layer--here .layer__verb { color: var(--surface); }
+
+.panel {
+  display: grid; gap: var(--gap);
+  padding-block: clamp(2.5rem, 1.5rem + 3vw, 4rem) var(--space-section);
+  border-top: 5px solid var(--hue);
+}
+.panel h2 { font-size: var(--text-h2); font-weight: 700; line-height: 1.05; letter-spacing: -0.022em; }
+.panel__note { margin-top: 0.75rem; color: var(--ink-soft); max-width: var(--measure); }
+
+.stance { align-items: start; }
+@media (min-width: 58rem) {
+  .stance { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: clamp(2rem, 1rem + 4vw, 5rem); }
+  .stance .panel__head { grid-column: 1 / -1; }
+}
+.stance__lead { font-size: var(--text-lead); line-height: 1.5; max-width: 38ch; }
+.stance__overview { margin-top: 1.25rem; color: var(--ink-soft); max-width: var(--measure); }
+.stance__overview a { color: var(--hue); }
+.stance__owns { background: var(--surface); padding: 1.5rem 1.6rem; border-left: 6px solid var(--hue); }
+.stance__owns h3 { font-size: 1.25rem; font-weight: 650; }
+.owns { margin: 0.9rem 0 0; padding: 0; list-style: none; display: grid; gap: 0.55rem; }
+.owns li { padding-left: 1.4rem; position: relative; }
+.owns li::before {
+  content: ""; position: absolute; left: 0; top: 0.62em;
+  width: 0.55rem; height: 0.55rem; background: var(--hue); border-radius: 1px;
+}
+.not-owns { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--ink-soft); }
+.not-owns strong { color: var(--ink); }
+
+.handoffs {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+}
+.handoff {
+  background: var(--surface); padding: 1.2rem 1.25rem 1rem; border-top: 4px solid var(--hue);
+  transition: transform 160ms var(--ease-out), box-shadow 160ms ease;
+}
+.handoff:hover, .handoff:focus-within { box-shadow: 0 10px 24px -18px var(--ink); }
+@media (prefers-reduced-motion: no-preference) {
+  .handoff:hover, .handoff:focus-within { transform: translateY(-2px); }
+}
+.handoff h3 { font-size: 1.2rem; font-weight: 650; letter-spacing: -0.01em; }
+.handoff h3 a { color: var(--hue); text-decoration: none; }
+.handoff h3 a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.handoff__verb { font-size: var(--text-small); color: var(--ink-soft); margin-top: 0.15rem; }
+.handoff dl { margin: 0.9rem 0 0; }
+.handoff dt { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; color: var(--hue); }
+.handoff dd { margin: 0.2rem 0 0.8rem; }
+
+.tech { margin: 0; display: grid; gap: 0.75rem 2rem; }
+@media (min-width: 50rem) { .tech { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.tech div { background: var(--surface); padding: 0.9rem 1.1rem; border-left: 3px solid var(--tint); }
+.tech dt { font-weight: 600; }
+.tech dd { margin: 0.2rem 0 0; color: var(--ink-soft); }
