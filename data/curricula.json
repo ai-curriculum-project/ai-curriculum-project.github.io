@@ -48,7 +48,7 @@
      "band": "Practitioner (L20)",
      "learning": "https://github.com/ai-workforce-curriculum/ai-assisted-software-engineer-learning",
      "solutions": "https://github.com/ai-workforce-curriculum/ai-assisted-software-engineer-solutions",
-     "modules": 0
+     "modules": 1
     },
     {
      "id": "ai-augmented-analyst",
@@ -58,7 +58,7 @@
      "band": "Practitioner (L20)",
      "learning": "https://github.com/ai-workforce-curriculum/ai-augmented-analyst-learning",
      "solutions": "https://github.com/ai-workforce-curriculum/ai-augmented-analyst-solutions",
-     "modules": 0
+     "modules": 1
     },
     {
      "id": "ai-augmented-product-manager",
@@ -68,7 +68,7 @@
      "band": "Product & Delivery (L30)",
      "learning": "https://github.com/ai-workforce-curriculum/ai-augmented-product-manager-learning",
      "solutions": "https://github.com/ai-workforce-curriculum/ai-augmented-product-manager-solutions",
-     "modules": 0
+     "modules": 1
     },
     {
      "id": "ai-augmented-team-manager",
@@ -78,7 +78,7 @@
      "band": "Leadership (L40+)",
      "learning": "https://github.com/ai-workforce-curriculum/ai-augmented-team-manager-learning",
      "solutions": "https://github.com/ai-workforce-curriculum/ai-augmented-team-manager-solutions",
-     "modules": 0
+     "modules": 12
     },
     {
      "id": "ai-enablement-lead",
@@ -88,7 +88,7 @@
      "band": "Leadership (L40+)",
      "learning": "https://github.com/ai-workforce-curriculum/ai-enablement-lead-learning",
      "solutions": "https://github.com/ai-workforce-curriculum/ai-enablement-lead-solutions",
-     "modules": 0
+     "modules": 12
     }
    ]
   },
@@ -208,7 +208,7 @@
      "band": "",
      "learning": "https://github.com/ai-startup-curriculum/startup-operations-governance-curriculum",
      "solutions": null,
-     "modules": 13
+     "modules": 14
     },
     {
      "id": "startup-exit",
@@ -292,7 +292,7 @@
      "band": "Assurance, Privacy, Security & Safety (L30–L45)",
      "learning": "https://github.com/ai-governance-curriculum/ai-privacy-engineer-learning",
      "solutions": "https://github.com/ai-governance-curriculum/ai-privacy-engineer-solutions",
-     "modules": 0
+     "modules": 12
     },
     {
      "id": "ai-evaluation-engineer",
@@ -332,7 +332,7 @@
      "band": "Assurance, Privacy, Security & Safety (L30–L45)",
      "learning": "https://github.com/ai-governance-curriculum/ai-auditor-learning",
      "solutions": "https://github.com/ai-governance-curriculum/ai-auditor-solutions",
-     "modules": 0
+     "modules": 12
     },
     {
      "id": "senior-ai-governance-architect",
@@ -467,7 +467,7 @@
      "band": "Engineer (L30)",
      "learning": "https://github.com/ai-engineering-curriculum/forward-deployed-engineer-learning",
      "solutions": "https://github.com/ai-engineering-curriculum/forward-deployed-engineer-solutions",
-     "modules": 0
+     "modules": 12
     },
     {
      "id": "voice-agent-engineer",
@@ -477,7 +477,7 @@
      "band": "Engineer (L30)",
      "learning": "https://github.com/ai-engineering-curriculum/voice-agent-engineer-learning",
      "solutions": "https://github.com/ai-engineering-curriculum/voice-agent-engineer-solutions",
-     "modules": 0
+     "modules": 12
     },
     {
      "id": "agent-platform-engineer",
@@ -487,7 +487,7 @@
      "band": "Senior & Architect (L40+)",
      "learning": "https://github.com/ai-engineering-curriculum/agent-platform-engineer-learning",
      "solutions": "https://github.com/ai-engineering-curriculum/agent-platform-engineer-solutions",
-     "modules": 0
+     "modules": 13
     },
     {
      "id": "senior-agentic-ai-engineer",
@@ -507,7 +507,7 @@
      "band": "Senior & Architect (L40+)",
      "learning": "https://github.com/ai-engineering-curriculum/ai-engineering-manager-learning",
      "solutions": "https://github.com/ai-engineering-curriculum/ai-engineering-manager-solutions",
-     "modules": 0
+     "modules": 12
     },
     {
      "id": "agentic-systems-architect",
@@ -580,7 +580,7 @@
      "band": "Specialist & Senior (L30–L35)",
      "learning": "https://github.com/ml-engineering-curriculum/ai-data-engineer-learning",
      "solutions": "https://github.com/ml-engineering-curriculum/ai-data-engineer-solutions",
-     "modules": 0
+     "modules": 12
     },
     {
      "id": "fine-tuning-engineer",
@@ -755,7 +755,7 @@
      "band": "Intermediate Level (2-4 years)",
      "learning": "https://github.com/ai-infra-curriculum/ai-infra-inference-engineer-learning",
      "solutions": "https://github.com/ai-infra-curriculum/ai-infra-inference-engineer-solutions",
-     "modules": 0
+     "modules": 14
     },
     {
      "id": "performance",
@@ -775,7 +775,7 @@
      "band": "Intermediate Level (2-4 years)",
      "learning": "https://github.com/ai-infra-curriculum/ai-infra-sre-learning",
      "solutions": "https://github.com/ai-infra-curriculum/ai-infra-sre-solutions",
-     "modules": 0
+     "modules": 14
     },
     {
      "id": "team-lead",
